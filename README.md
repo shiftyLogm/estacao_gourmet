@@ -4,7 +4,7 @@
 
 # Estação Gourmet - Cardápio Digital
 
-**Estação Gourmet** é um site de cardápio digital desenvolvido com **HTML** e **CSS**, utilizando **Flexbox** para um layout **responsivo** e adaptável a diferentes tamanhos de tela. O foco do cardápio são **comidas doces**, oferecendo uma navegação simples e visualmente agradável para os usuários.
+**Estação Gourmet** é um site de cardápio digital desenvolvido com **HTML**, **CSS** e **Javascript**, utilizando **Flexbox** para um layout **responsivo** e adaptável a diferentes tamanhos de tela. O foco do cardápio são **comidas doces**, oferecendo uma navegação simples e visualmente agradável para os usuários.
 
 # Informações e layout do site
 
@@ -52,6 +52,7 @@ O layout foi construído com **Flexbox**, garantindo uma boa experiência de uso
 # Tecnologias Utilizadas
 
 - **HTML**  
-- **CSS**  
+- **CSS**
+- **Javascript**  
 - **Flexbox**
 - **Git para versionamento**
