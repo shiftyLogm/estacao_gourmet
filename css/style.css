@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -41,7 +45,6 @@ a {
 
         & li {
             & a {
-                font-family: "Inter", sans-serif;
                 font-size: 22px;
                 font-weight: bold;
                 color: #3e2723;
@@ -124,4 +127,111 @@ main {
     #footer-contatos {
         margin-top: 20px;
     }
+}
+
+body {
+  background-color: #F5E9D5;
+}
+.cardapio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5% 5%;
+}
+
+.h1-cardapio {
+  color: #6D4C41;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.entrada-card {
+  margin-top: 5%;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-entrada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  text-align: center;
+  width: auto;
+  max-width: 190px;
+  padding: 0.8rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Cores de fundo dos cards */
+.cardapio-entradas .card-entrada {
+  background-color: #FFF8F0;
+}
+
+.cardapio-pratos .card-entrada {
+  background-color: #F8E0E4;
+}
+
+.cardapio-bebidas .card-entrada {
+  background-color: #E6EEFA;
+}
+
+
+.img-card {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.titulo-cardapio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3E2723;
+}
+
+.preco-cardapio {
+  margin-top: 5%;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* Cores dos preços por seção */
+.cardapio-entradas .preco-cardapio {
+  color: #32BE51; /* Verde */
+}
+
+.cardapio-pratos .preco-cardapio {
+  color: #C02D4E; /* Vermelho/rosa */
+}
+
+.cardapio-bebidas .preco-cardapio {
+  color: #4C50A3; /* Azul/roxo */
+}
+
+.card-entrada:hover {
+ transform: scale(1.05)
+}
+
+@media (max-width: 600px) {
+
+  .img-card {
+  max-width: 90%;
+  }
+  .card-entrada {
+    max-width: 100px;
+    max-height: 200px;
+  }
+
+  .titulo-cardapio {
+  font-size: 0.8rem;
+  }
+
+  .preco-cardapio {
+    font-size: 1.1rem;
+  }
 }

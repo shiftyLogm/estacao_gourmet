@@ -12,20 +12,26 @@
 
 .swiper-text {
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     left: 0;
     color: #FFD2D2;
     padding-left: 2%;
-    font-size: 2.75rem;
+    font-size: 3.5vw;
     width: 40%;
-    font-family: poppins, sans-serif;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.whatsapp-icon {
+  font-size: 20px;
+  color: white;
+  padding-left: 2px;
 }
 
 .swiper-button {
     position: absolute;
-    bottom: calc(50% - 80px);
+    bottom: calc(40% - 80px);
     left: 0;
-    background-color: #E53935;
+    background-color: #DB3A3E;
     padding: 1% 2%;
     margin-left: 2%;
     border-radius: 8px;
@@ -35,11 +41,42 @@
 .swiper-button-text {
     color: white;
     font-size: 1.25rem;
-    font-family: poppins, sans-serif;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .swiper {
+        height: 60vh;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .swiper {
         height: 50vh;
     }
+    .swiper-text {
+        font-size: 7vw;
+        width: 80%;
+        bottom: 45%;
+    }
+    .swiper-button {
+        bottom: calc(45% - 60px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .swiper {
+        height: 40vh;
+    }
+    .swiper-text {
+        font-size: 9vw;
+        width: 90%;
+        bottom: 40%;
+    }
+    .swiper-button {
+        padding: 2% 4%;
+        font-size: 1.5rem;
+        bottom: calc(40% - 50px);
+    }
+
 }

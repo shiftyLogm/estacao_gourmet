@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/swiper.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <main>
         <script type="module" src="/js/swiper.js"></script>
-
+        
+        <section id="topo"></section>
         <nav class="main-menu">
             <img src="assets/images/logo1.png" alt="">
             <div class="mobile-menu">
@@ -24,8 +26,8 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li class="nav-links"><a href="">Início</a></li>
-                <li class="nav-links"><a href="">Cardápio</a></li>
+                <li class="nav-links"><a href="#topo">Início</a></li>
+                <li class="nav-links"><a href="#cardapio-principal">Cardápio</a></li>
                 <li class="nav-links"><a href="">Contato</a></li>
             </ul>
         </nav>
@@ -34,21 +36,101 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img class="swiper-img" src="/assets/images/swiper-home/slide1.jpg" alt="Slide 1">
-                    <span class="swiper-text">Uma estação de sabores doces que encanta</span>
+                    <span class="swiper-text">Uma estação de sabores doces que encanta!</span>
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-img" src="/assets/images/swiper-home/slide2.jpg" alt="Slide 1">
+                    <span class="swiper-text">Confira nosso cardápio!</span>
+                    <a href="#cardapio-principal" class="swiper-button">
+                        <span class="swiper-button-text">Ver cardápio</span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-img" src="/assets/images/swiper-home/slide3.jpg" alt="Slide 3">
+                    <span class="swiper-text">Encomende doces da sua festa agora!</span>
                     <div class="swiper-button">
-                        <span class="swiper-button-text">Conheça nosso cardápio</span>
+                        <span class="swiper-button-text">Agendar</span>
+                        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
                     </div>
                 </div>
-                <div class="swiper-slide"><img class="swiper-img" src="/assets/images/swiper-home/slide2.jpg"
-                        alt="Slide 2"></div>
-                <div class="swiper-slide"><img class="swiper-img" src="/assets/images/swiper-home/slide3.jpg"
-                        alt="Slide 3"></div>
             </div>
         </div>
 
         <script type="module" src="/js/mobile-navbar.js"></script>
+
+        <section id="cardapio-principal">
+            <div class="cardapio cardapio-entradas">
+                <h1 class="h1-cardapio">Entradas doces</h1>
+                <div class="entrada-card">
+                    <div class="card-entrada">
+                        <img class="img-card" src="assets/cardapio/Entrada-churros.png" alt="churros doce porção">
+                        <h2 class="titulo-cardapio">Porção de Churros</h2>
+                        <p class="preco-cardapio">R$ 11,90</p>
+                    </div>
+
+                    <div class="card-entrada">
+                        <img class="img-card" src="assets/cardapio/trio-de-mousses.png" alt="trio de mousses">
+                        <h2 class="titulo-cardapio">Trio de Mousses</h2>
+                        <p class="preco-cardapio">R$ 10,90</p>
+                    </div>
+
+                    <div class="card-entrada">
+                        <img class="img-card" src="assets/cardapio/Cake-pops.png" alt="pirulitos de bolo">
+                        <h2 class="titulo-cardapio">Pirulitos de bolo</h2>
+                        <p class="preco-cardapio">R$ 7,99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardapio cardapio-pratos">
+                <h1 class="h1-cardapio">Pratos principais</h1>
+                <div class="entrada-card">
+                    <div class="card-entrada">
+                        <img class="img-card" src="img-estacao/Fondue-gourmet.png" alt="fondue gourmet">
+                        <h2 class="titulo-cardapio">Fondue gourmet</h2>
+                        <p class="preco-cardapio">R$ 20,99</p>
+                    </div>
+
+                    <div class="card-entrada">
+                        <img class="img-card" src="img-estacao/Petit-gateau-estacao.png" alt="petit gateau">
+                        <h2 class="titulo-cardapio">Petit Gateau Estação</h2>
+                        <p class="preco-cardapio">R$ 10,99</p>
+                    </div>
+
+                    <div class="card-entrada">
+                        <img class="img-card" src="img-estacao/Cheesecake-vermelhas.png"
+                            alt="cheesecake de frutas vermelhas">
+                        <h2 class="titulo-cardapio">Cheesecake Vermelhas</h2>
+                        <p class="preco-cardapio">R$ 18,99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardapio cardapio-bebidas">
+                <h1 class="h1-cardapio">Bebidas doces</h1>
+                <div class="entrada-card">
+                    <div class="card-entrada">
+                        <img class="img-card" src="img-estacao/Milkshake-oreo.png" alt="milk-shake oreo">
+                        <h2 class="titulo-cardapio">Milk-shake Oreo</h2>
+                        <p class="preco-cardapio">R$ 17,99</p>
+                    </div>
+
+                    <div class="card-entrada">
+                        <img class="img-card" src="img-estacao/Chocolate-quente.png" alt="chocolate quente">
+                        <h2 class="titulo-cardapio">Chocolate Quente</h2>
+                        <p class="preco-cardapio">R$ 9,90</p>
+                    </div>
+
+                    <div class="card-entrada">
+                        <img class="img-card" src="img-estacao/Smoothie-frutas.png" alt="smoothie de frutas">
+                        <h2 class="titulo-cardapio">Smoothie de frutas</h2>
+                        <p class="preco-cardapio">R$ 14,99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
+
     <footer class="footer">
         <div id="footer-content">
             <ul class="footer-list">
