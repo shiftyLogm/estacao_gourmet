@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .main-menu {
   background-color: #fff8f0;
   display: flex;
